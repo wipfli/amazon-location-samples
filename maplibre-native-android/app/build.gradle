@@ -38,6 +38,4 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
 
     implementation 'org.maplibre.gl:android-sdk:9.4.2'
-    //implementation 'com.amazonaws:aws-android-sdk-core:2.23.0'
-    //implementation 'com.squareup.okhttp3:okhttp:3.12.3'
 }

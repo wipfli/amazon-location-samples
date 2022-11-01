@@ -6,17 +6,11 @@ package aws.location.demo.maplibre
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-//import aws.location.demo.okhttp.SigV4Interceptor
-//import com.amazonaws.auth.CognitoCachingCredentialsProvider
-//import com.amazonaws.regions.Regions
 import com.mapbox.mapboxsdk.Mapbox
 import com.mapbox.mapboxsdk.maps.MapView
 import com.mapbox.mapboxsdk.maps.Style
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.geometry.LatLng
-
-//import com.mapbox.mapboxsdk.module.http.HttpRequestUtil
-//import okhttp3.OkHttpClient
 
 private const val SERVICE_NAME = "geo"
 
@@ -26,25 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        // configuration
-//        val identityPoolId = getString(R.string.identityPoolId)
-//        val region = getString(R.string.awsRegion)
-//        val mapName = getString(R.string.mapName)
-
-//        // Credential initialization
-//        val credentialProvider = CognitoCachingCredentialsProvider(
-//            applicationContext,
-//            identityPoolId,
-//            Regions.fromName(identityPoolId.split(":").first())
-//        )
-
         // initialize MapLibre
         Mapbox.getInstance(this, null)
-//        HttpRequestUtil.setOkHttpClient(
-//            OkHttpClient.Builder()
-//                .addInterceptor(SigV4Interceptor(credentialProvider, SERVICE_NAME))
-//                .build()
-//        )
 
         // initialize the view
         setContentView(R.layout.activity_main)
